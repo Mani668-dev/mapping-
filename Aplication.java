@@ -20,4 +20,12 @@ rate = 12  # Annual rate of return in percentage
 time = 12  # Investment duration in months
 
 print(sip_investment(principal, rate, time))  # Total value of SIP investment after the given time
-# end of code
+#Loans code
+def loan_emi(principal, rate, tenure):
+    monthly_rate = rate / 12 / 100
+    emi = principal * monthly_rate * (1 + monthly_rate) ** tenure / ((1 + monthly_rate) ** tenure - 1)
+    return emi
+
+print(loan_emi(500000, 10, 24))  # Example: loan amount, interest rate, and tenure in months
+#end of code 
+
