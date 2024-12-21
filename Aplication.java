@@ -11,3 +11,12 @@ const LoginPage = () => {
   );
 };
 export default LoginPage;
+#Loans code
+def loan_emi(principal, rate, tenure):
+    monthly_rate = rate / 12 / 100
+    emi = principal * monthly_rate * (1 + monthly_rate) ** tenure / ((1 + monthly_rate) ** tenure - 1)
+    return emi
+
+print(loan_emi(500000, 10, 24))  # Example: loan amount, interest rate, and tenure in months
+#end of code 
+
