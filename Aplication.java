@@ -11,6 +11,15 @@ const LoginPage = () => {
   );
 };
 export default LoginPage;
+# sip invesement code 
+def sip_investment(principal, rate, time):
+    return principal * (((1 + rate / 100) ** time - 1) / (rate / 100))
+
+principal = 1000  # SIP amount per month
+rate = 12  # Annual rate of return in percentage
+time = 12  # Investment duration in months
+
+print(sip_investment(principal, rate, time))  # Total value of SIP investment after the given time
 #Loans code
 def loan_emi(principal, rate, tenure):
     monthly_rate = rate / 12 / 100
